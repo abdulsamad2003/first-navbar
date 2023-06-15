@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    overflow-x: hidden
+
+.x-variable
+    position: absolute
+    width: 30px
+    height: 40px
+    margin-left: auto
+    background: none
+    top: 2%
+    right: 4%
+    @media (max-width:500px)
+        width: 25px
+        height: 40px
+        top: 5px
+        
+.x-variable::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 1px
+    width: 100%
+    height: 2px
+    background-color: #fefefe
+.x-variable::after
+    
+    content: ""
+    position: absolute
+    top: 20%
+    left: 1px
+    width: 100%
+    height: 2px
+    background-color: #fefefe

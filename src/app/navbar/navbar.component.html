@@ -1,0 +1,16 @@
+<section>
+  <div (click)="animate()" class="x-variable openNav"></div>
+
+  <div class="nav-bar" id="nav-bar">
+    <div class="navbar-links">
+      <div (click)="reverseAnimate()" class="x-variable closeNav"></div>
+      <div
+        [ngClass]="{ animate: check == true }"
+        class="links"
+        *ngFor="let item of navlinks"
+      >
+        <h4 class="hh">{{ item.link }}</h4>
+      </div>
+    </div>
+  </div>
+</section>
